@@ -1,0 +1,53 @@
+<html>
+<body>
+
+<h1>Juist of fout fundamenten</h1>
+
+<p id="vraag"></p>
+<button id="juist" onclick="juist()">Juist</button>
+<button id="fout" onclick="fout()">Fout</button>
+<button id="volgende" onclick="ask()">Volgende vraag</button>
+
+
+
+
+
+<script>
+var vragen =  ["Een string heeft steeds een eindige lengte. juist", "Een taal bevat steeds een eindig aantal strings. fout", "De verzameling van alle strings die gevormd kunnen worden met bepaald alfabet, is een taal over dat alfabet. juist", "Voor eender welke twee talen S en T, regulier of niet, is TS*T een reguliere taal. fout", "{a}* bevat oneindig veel strings. juist", "Niet - deterministische automaten kunnen meer talen herkennen dan deterministische. fout", "Niet-deterministische eindige automaten kunnen dezelfde talen herkennen als deterministische, maar soms effici&euml;nter in tijd (d.w.z. strings worden soms herkend met minder toestandstransities). fout", "Niet-deterministische turingmachines kunnen meer talen herkennen dan deterministische. fout", "Als L &alpha; T en L is een element van de klasse P, dan geldt steeds T is een element van P. fout", "We weten zeker dat P een deelverzameling is van NP en dat NP een deelverzameling is van NPC. fout", "We weten zeker dat P een deelverzameling is van NPC en dat NPC een deelverzameling is van NP. fout", "Elke vlakke graaf voldoet aan v - e + f = 2 met v het aantal knopen, e het aantal bogen en f het aantal zijvlakken. fout", "In een samenhangende graaf bestaat er een pad tussen elke twee knopen. juist", "K2,2 is homeomorf met K3. juist", "Als twee grafen isomorf zijn, hebben ze evenveel knopen. juist", "Als twee grafen homeomorf zijn, hebben ze evenveel bogen. fout", "Bepalen of een gewogen graaf een Hamiltoniaanse kring met gewicht kleiner dan 100 heeft is zeker in P. fout", "Bepalen of een graaf een Eureliaanse kring heeft, is zeker in NP. juist", "Bepalen of het korste pad tussen twee gegeven knopen in een gewogen graaf en een gewicht kleiner dan 100, is zeker NP-compleet. fout", "Een boom met n knopen heeft steeds n-1 bogen. juist", "Elke samenhangende graaf heeft precies 1 opspannende boom. fout", "Het algoritme van Kruskal en het algoritme van Prim zijn twee verschillende manieren om hetzelfde probleem op te lossen. juist", "Het algoritme van Kruskal en het Algoritme van Prim geven steeds dezelfde uitkomst. fout", "Elke boom heeft een twee-kleuring. juist", "Elke eindige taal is regulier. juist", "Elke reguliere taal is eindig. fout", "Elke reguliere taal bevat de lege string.fout", "De lege taal is een reguliere taal. juist", "Voor elke reguliere taal L geldt: als x en y een element is van L, dan is xy ook een element van L. fout", "Voor elke reguliere taal bestaat er een eindige automaat die die taal herkent. juist", "De verzameling van {(ab)^n | n element van de natuurlijke getallen} is een reguliere taal. juist", "De verzameling van {a^m b^n | n,m element van de natuurlijke getallen} is een reguliere taal. juist", "De verzameling van {a^n b^n | n element van de natuurlijke getallen} is een reguliere taal. fout", "De verzameling van alle wiskundige uitdrukkingen gevormd met +,-,/,x en haakjes is een reguliere taal. fout", "De klasse van talen herkend door eindige toestandsautomaten is dezelfde als de klasse herkend door niet-determinitische eindige automaten. juist", "Voor elk java-programma bestaat er een Turningmachine die voor eender welke input dezelfde output geeft als dat programma. juist", "Voor elke binaire booleaanse operator f: BxB ->, met B = {0,1} bestaat er een eindige automaat die f berekent. juist", "Voor elke functie f: N -> N bestaat er een eindige automaat die f berekent. fout", "Voor elke functie f: N -> N bestaat er een TM die f berekent. fout", "Uit de stelling van Cook volgt SAT is een element van NPC.juist", "Uit de stelling van Cook volgt SAT is geen een element van P. fout", "Het algoritme van Dijkstra heeft complexiteit 0(n^3) (met n het aantal knopen) juist", "Het algoritme van Dijkstra is assymptotisch equivalent met n^3. (met n het aantal knopen) fout", "Het algoritme van Dijkstra kan door een deterministische TM uitgevoerd worden. juist", "Een graaf met een euleriaanse kring heeft nooit knopen met oneven graad. juist", "Elke samenhangende vlakke graaf heeft een Euleriaanse kring. fout", "De tweeledige grafen K3,4 en K4,3 zijn isomorf. juist", "Elke tweeledige graaf heeft een tweekleuring. juist", "Elke tweeledige graaf is vlak. fout", "Elke vlakke graaf heeft een vierkleuring. juist", "K3,3 is vlak. fout", "K3,3 heeft een vierkleuring. juist", "elke niet-vlakke graaf heeft minstens een kring. juist", "Uit de stelling van Kuratowski volgt dat elke graaf die geen subgraaf bevat die isomorf is met K5 of K3,3 valk is. fout", "Van elke vlakke graaf kan een boom gemaakt worden door k bogen weg te halen met k het aantal kringen. fout", "De tijdscomplexiteit van het algoritme van Prim is linear in het aantal knopen. fout", "De tijdscomplexiteit van het algoritme van Prim is linear in het aantal bogen. fout", "Om een opspannende boom te hebben moet een graaf samenhangend en vlak zijn. fout", "Een eindige taal is steeds regulier. juist", "Een reguliere taal bevat steeds de lege string. fout", "Voor elke reguliere taal L en voor elke string s kan in tijd O(n) beslist worden of s &isin; L, met n de lengte van s. juist", "Elke eindige automaat A beslist of s &isin; L(A) in een aantal stappen O(m), met m het aantal toestanden van A. fout", "De verzameling {a^n b^n | n &isin; N} is een reguliere taal over {a,b,c,0,...,9}. fout", "De verzameling {a^n b^n | n &isin; N, 2n ≤ 20} is een reguliere taal over {a,b,c,0,...9}. juist", "Voor elke functie f : N → {0,1} bestaat er een Turingmachine die f berekent. fout", "Voor elke functie f : {0,1}^2 → {0,1} (d.w.z., voor elke binaire booleaanse operator) bestaat er een Turingmachine die f berekent. juist", "Voor elke binaire booleaanse operator f bestaat er een eindige automaat die f berekent. juist", "Als L1 &alpha; L2 en L1 &isin; P, dan geldt steeds L2 &isin; P. fout", "We weten zeker dat P ⊆ NP ⊆ NPC. fout", "Een graaf met een Euleriaanse kring heeft nooit knopen met oneven graad. juist", "Elke graaf met enkel knopen met even graad heeft een Euleriaanse kring. fout", "Elke graaf die K5 bevat heeft zeker geen 4-kleuring. juist", "Elke graaf met minder dan n componenten heeft een n-kleuring. fout", "Elke vlakke graaf voldoet aan v - e + f = 2 (met v het aantal knopen, e het aantal bogen, en f het aantal zijvlakken). fout", "Het algoritme van Kruskal en het algoritme van Prim zijn twee verschillende manieren om hetzelfde probleem op te lossen. juist", "Het algoritme van Kruskal en het algoritme van Prim geven steeds dezelfde uitkomst. fout"]; 
+var antwoord;
+
+function juist(){
+	if(antwoord != "juist"){
+		document.getElementById("juist").style.background='#ff0000';
+	}else{
+		document.getElementById("juist").style.background='#b6f881';
+	}
+}
+
+function fout(){
+	if(antwoord != " fout"){
+		document.getElementById("fout").style.background='#ff0000';
+	}else{
+		document.getElementById("fout").style.background='#b6f881';
+	}
+}
+
+function ask(){
+	document.getElementById("juist").style.background= "initial";
+	document.getElementById("fout").style.background= "initial";
+	var vraag = vragen[Math.floor(Math.random()*vragen.length)];
+	var vraagzonderantwoord = vraag.substring(0, vraag.length - 5);
+	antwoord = vraag.substring(vraag.length - 5, vraag.length);
+	document.getElementById("vraag").innerHTML = vraagzonderantwoord;
+
+}
+ask();
+</script>
+
+
+</body>
+</html>
+
+
+
+
